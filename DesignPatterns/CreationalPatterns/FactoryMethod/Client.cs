@@ -14,7 +14,7 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethod
 
             sb.Append("App: Launched with the ConcreteCreator1.\r\n");
             sb.Append(ClientCode(new ConcreteCreator1()));
-            sb.Append("\r\nApp: Launched with the ConcreteCreator2.");
+            sb.Append("\r\nApp: Launched with the ConcreteCreator2.\r\n");
             sb.Append(ClientCode(new ConcreteCreator1()));
 
             return sb.ToString();

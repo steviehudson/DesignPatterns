@@ -1,21 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using DesignPatterns.CreationalPatterns.FactoryMethod;
 
 namespace DesignPatternsDemo
 {
@@ -56,7 +40,9 @@ namespace DesignPatternsDemo
             switch (_userInput) 
             {
                 case "Factory Method":
-                    return new Client().FactoryMethod();
+                    return new DesignPatterns.CreationalPatterns.FactoryMethod.Client().FactoryMethod();
+                case "Abstract Factory":
+                    return new DesignPatterns.CreationalPatterns.AbstractFactory.Client().AbstractFactory();
                 default:
                     return "";
             }
